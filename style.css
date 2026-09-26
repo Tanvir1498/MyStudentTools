@@ -557,3 +557,186 @@ a {
     }
 
 }
+/* =========================
+   GPA CALCULATOR
+========================= */
+
+.calculator-section {
+    min-height: 80vh;
+    padding: 80px 0;
+    background: #f7f8fc;
+}
+
+
+.calculator-container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.calculator-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.calculator-heading h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+
+.calculator-heading > p:last-child {
+    color: #6b7280;
+}
+
+
+.subject-row {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 1fr 45px;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+.subject-row input,
+.subject-row select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    outline: none;
+}
+
+
+.subject-row input:focus,
+.subject-row select:focus {
+    border-color: #4f46e5;
+}
+
+
+.remove-btn {
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    border-radius: 8px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.calculator-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+.add-btn,
+.calculate-btn {
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.add-btn {
+    background: white;
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+}
+
+
+.calculate-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+
+.calculate-btn:hover {
+    background: #3730a3;
+}
+
+
+.result-box {
+    margin-top: 35px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+.result-box p {
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+
+.result-box h2 {
+    font-size: 55px;
+    color: #4f46e5;
+    margin: 5px 0;
+}
+
+
+.result-box span {
+    color: #555555;
+}
+
+
+/* =========================
+   GPA MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .calculator-section {
+        padding: 50px 0;
+    }
+
+
+    .calculator-heading h1 {
+        font-size: 34px;
+    }
+
+
+    .subject-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .subject-row .subject-name {
+        grid-column: span 2;
+    }
+
+
+    .subject-row .grade {
+        grid-column: span 1;
+    }
+
+
+    .remove-btn {
+        height: 48px;
+    }
+
+
+    .calculator-buttons {
+        flex-direction: column;
+    }
+
+
+    .add-btn,
+    .calculate-btn {
+        width: 100%;
+    }
+
+}
